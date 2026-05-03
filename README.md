@@ -1,0 +1,11 @@
+🤖 Customer Support Chatbot
+
+AI-Powered Customer Support Assistant using RAG LangChain • OpenAI • Flask • FAISS/Chroma • Docker
+
+📌 Overview
+
+Customer Support Chatbot is an intelligent AI system designed to handle customer queries using natural language. It leverages Retrieval-Augmented Generation (RAG) to provide accurate, context-aware responses based on company knowledge (documents, FAQs, or support data).
+
+Instead of relying only on a language model, the chatbot retrieves relevant information from a knowledge base and uses it to generate reliable answers—reducing hallucinations and improving trust.
+
+✨ Features 💬 Natural language customer support interaction 📄 Upload and query documents (FAQs, manuals, policies) ⚡ Fast semantic search using vector databases 🎯 Context-aware answers using RAG pipeline 🧠 Prompt engineering for controlled responses 🌐 REST API for frontend or integration 🐳 Dockerized for easy deployment 🛠️ Tech Stack AI & NLP Python 3.x LangChain OpenAI API (GPT + Embeddings) FAISS / Chroma (Vector Database) Backend Flask Flask-CORS REST API DevOps Docker Git & GitHub Environment Variables (.env) ⚙️ How It Works Data Ingestion Customer support documents are loaded and split into chunks Embedding Each chunk is converted into vector embeddings Storage Stored in a vector database (FAISS/Chroma) Retrieval User query → converted into embedding Top relevant chunks are retrieved Generation Retrieved context + query → sent to LLM with engineered prompt Response Accurate answer returned via API customer-support-chatbot/ ├── app.py # Flask API entry point ├── rag_pipeline.py # RAG logic (LangChain) ├── templates/ │ └── index.html # Chat UI ├── data/ # Knowledge base (PDFs / FAQs) ├── Dockerfile # Container setup ├── requirements.txt # Dependencies ├── .gitignore # Ignore secrets └── .env # API keys (not committed) 🎯 Use Cases Customer support automation FAQ chatbot Internal company assistant E-commerce support system SaaS helpdesk assistant 🧠 Key Highlights Built a production-ready RAG pipeline using LangChain + vector DB Applied prompt engineering to control LLM outputs and reduce hallucinations Designed a Flask REST API for real-time interaction Containerized the system using Docker for portability Simulated a full MLOps workflow from development to deployment
